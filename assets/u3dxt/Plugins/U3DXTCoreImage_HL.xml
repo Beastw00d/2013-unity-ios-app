@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>/Users/michael/Dropbox/Michael/unity/u3dxt/coreimage/cs/bin/Release/U3DXTCoreImage_HL</name>
+    </assembly>
+    <members>
+        <member name="T:U3DXT.iOS.CoreImage.CGImageOrientation">
+            <summary>
+            Image orientation.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.CGImageOrientation.Default">
+            <summary>
+            The default image orientation.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.CGImageOrientation.Mirrored">
+            <summary>
+            The mirrored.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.CGImageOrientation.UpsideDown">
+            <summary>
+            The upside-down image orientation.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.CGImageOrientation.UpsideDownMirrored">
+            <summary>
+            The upside down mirrored.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.CGImageOrientation.RotatedRight">
+            <summary>
+            The rotated right image orientation.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.CGImageOrientation.RotatedRightMirrored">
+            <summary>
+            The rotated right mirrored.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.CGImageOrientation.RotatedLeft">
+            <summary>
+            The rotated left image orientation.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.CGImageOrientation.RotatedLeftMirrored">
+            <summary>
+            The rotated left mirrored.
+            </summary>
+        </member>
+        <member name="T:U3DXT.iOS.CoreImage.UIImageOrientationExtensions">
+            <summary>
+            User interface image orientation extensions.
+            </summary>
+        </member>
+        <member name="M:U3DXT.iOS.CoreImage.UIImageOrientationExtensions.ToCGImageOrientation(U3DXT.iOS.Native.UIKit.UIImageOrientation)">
+            <summary>
+            To the CG image orientation.
+            </summary>
+            <returns>The CG image orientation.</returns>
+            <param name="value">Value.</param>
+        </member>
+        <member name="T:U3DXT.iOS.CoreImage.CoreImageXT">
+            <summary>
+            Main class for iOS CoreImage plugin. High-level API.</summary>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="T:U3DXT.iOS.CoreImage.Face">
+            <summary>
+            A Face object contains info on the location and size of face features in an image.
+            This is returned by FaceDetector.DetectInImage() and used in FacesDetectedEventArgs.
+            </summary>
+        </member>
+        <member name="M:U3DXT.iOS.CoreImage.Face.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:U3DXT.iOS.CoreImage.Face" /> class.
+            </summary>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.bounds">
+            <summary>
+            The location and size of the face.
+            </summary>
+            <value>The bounds.</value>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.mouthPosition">
+            <summary>
+            The position of the mouth.
+            </summary>
+            <value>The mouth position.</value>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.hasMouthPosition">
+            <summary>
+            Indicates whether the mouth is detected.
+            </summary>
+            <value>
+                <c>true</c> if the mouth is detected; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.leftEyePosition">
+            <summary>
+            The position of the left eye.
+            </summary>
+            <value>The left eye position.</value>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.hasLeftEyePosition">
+            <summary>
+            Indicates whether the left eye is detected.
+            </summary>
+            <value>
+                <c>true</c> if the left eye is detected; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.rightEyePosition">
+            <summary>
+            The position of the right eye.
+            </summary>
+            <value>The right eye position.</value>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.hasRightEyePosition">
+            <summary>
+            Indicates whether the right eye is detected.
+            </summary>
+            <value>
+                <c>true</c> if the right eye is detected; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.trackingID">
+            <summary>
+            The tracking ID of this face.
+            </summary>
+            <value>The tracking ID.</value>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.hasTrackingID">
+            <summary>
+            Indicates whether the face has a tracking ID.
+            </summary>
+            <value>
+                <c>true</c> if the face has a tracking ID; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.trackingFrameCount">
+            <summary>
+            The tracking frame count of this face.
+            </summary>
+            <value>The tracking frame count.</value>
+        </member>
+        <member name="P:U3DXT.iOS.CoreImage.Face.hasTrackingFrameCount">
+            <summary>
+            Indicates whether the face has a tracking frame count.
+            </summary>
+            <value>
+                <c>true</c> if the face has a tracking frame count; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:U3DXT.iOS.CoreImage.FaceDetector">
+            <summary>
+            TODO
+            </summary>
+        </member>
+        <member name="M:U3DXT.iOS.CoreImage.FaceDetector.#ctor(System.Boolean,System.Boolean)">
+            <summary>
+            Creates an instance of FaceDetector. Once created, the two arguments cannot be changed for this instance.
+            If using high accuracy, the preprocessImageScale property is set to 1.0, otherwise defaults to 0.125.
+            </summary>
+            <param name="useHighAccuracy">Thether to use high accuracy for detection.</param>
+            <param name="trackFaces">Whether to track faces in live video or successive image detections; available ONLY in iOS 6.0 and later.</param>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.FaceDetector.preprocessImageScale">
+            <summary>
+            The preprocess image scale.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.FaceDetector.projectedScale">
+            <summary>
+            The projected scale.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.FaceDetector.correctOrientation">
+            <summary>
+            The correct orientation.
+            </summary>
+        </member>
+        <member name="F:U3DXT.iOS.CoreImage.FaceDetector.isMirrored">
+            <summary>
+            The is mirrored.
+            </summary>
+        </member>
+        <member name="M:U3DXT.iOS.CoreImage.FaceDetector.DetectInImage(UnityEngine.Texture2D,U3DXT.iOS.Native.UIKit.UIImageOrientation)">
+            <summary>
+            Detects the in image.
+            </summary>
+            <returns>The in image.</returns>
+            <param name="image">Image.</param>
+            <param name="imageOrientation">Image orientation.</param>
+        </member>
+        <member name="M:U3DXT.iOS.CoreImage.FaceDetector.DetectInImage(UnityEngine.Texture2D,U3DXT.iOS.CoreImage.CGImageOrientation)">
+            <summary>
+            Detects the in image.
+            </summary>
+            <returns>The in image.</returns>
+            <param name="image">Image.</param>
+            <param name="imageOrientation">Image orientation.</param>
+        </member>
+        <member name="M:U3DXT.iOS.CoreImage.FaceDetector.DetectInImage(U3DXT.iOS.Native.CoreImage.CIImage,U3DXT.iOS.CoreImage.CGImageOrientation)">
+            <summary>
+            Detects the in image.
+            </summary>
+            <returns>The in image.</returns>
+            <param name="ciimage">Ciimage.</param>
+            <param name="imageOrientation">Image orientation.</param>
+        </member>
+    </members>
+</doc>

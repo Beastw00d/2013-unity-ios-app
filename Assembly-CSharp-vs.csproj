@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{DD444E1F-FB33-52C0-8369-0E65D3EC7F51}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_1;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\BEEPUMSCRIPTS\BoxScript.cs" />
+     <Compile Include="Assets\BEEPUMSCRIPTS\BulletScript.cs" />
+     <Compile Include="Assets\BEEPUMSCRIPTS\GameCam.cs" />
+     <Compile Include="Assets\BEEPUMSCRIPTS\GameMode.cs" />
+     <Compile Include="Assets\BEEPUMSCRIPTS\LevelController.cs" />
+     <Compile Include="Assets\BEEPUMSCRIPTS\MenuScript.cs" />
+     <Compile Include="Assets\BEEPUMSCRIPTS\PlayerControl.cs" />
+     <Compile Include="Assets\BEEPUMSCRIPTS\StatManager.cs" />
+     <Compile Include="Assets\BEEPUMSCRIPTS\TreeManager.cs" />
+     <Compile Include="Assets\Resources\GameSettings.cs" />
+     <Compile Include="Assets\Resources\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
+     <Compile Include="Assets\Scripts\Enemy.cs" />
+     <Compile Include="Assets\Scripts\EnemyManager.cs" />
+     <Compile Include="Assets\Scripts\HealthyCell.cs" />
+     <Compile Include="Assets\Scripts\MenuManager.cs" />
+     <Compile Include="Assets\Scripts\PlayerControls.cs" />
+     <Compile Include="Assets\Scripts\SceneFader.cs" />
+     <Compile Include="Assets\Scripts\VisualEffects.cs" />
+     <Compile Include="Assets\U3DXT\Examples\KitchenSink\KitchenSink.cs" />
+     <Compile Include="Assets\U3DXT\Examples\core\GUIBasics\GUIBasics.cs" />
+     <Compile Include="Assets\U3DXT\Examples\core\WebViewTest\WebViewTest.cs" />
+     <Compile Include="Assets\U3DXT\Examples\coreextras\AssetLibraryTest\AssetLibraryTest.cs" />
+     <Compile Include="Assets\U3DXT\Examples\coreextras\iCloudTest\iCloudTest.cs" />
+     <Compile Include="Assets\U3DXT\Examples\gamekit7\GKMeeting\GKMeetingMain.cs" />
+     <Compile Include="Assets\U3DXT\Examples\gamekit7\GKMeeting\Meeting.cs" />
+     <Compile Include="Assets\U3DXT\Examples\gamekit7\GKMeeting\MeetingParticipant.cs" />
+     <Compile Include="Assets\U3DXT\Examples\gamekit7\GameKitBasics\GameKitBasics.cs" />
+     <Compile Include="Assets\U3DXT\Examples\social\MailAnything\MailAnything.cs" />
+     <Compile Include="Assets\U3DXT\Examples\social\SocialTest\SocialTest.cs" />
+     <Compile Include="Assets\U3DXT\Prefabs\SupportFiles\social\FacebookGameObject.cs" />
+     <Compile Include="Assets\U3DXT\Prefabs\SupportFiles\uikit\WebViewGameObject.cs" />
+     <None Include="Assets\U3DXT\Plugins\U3DXTGameKit7.xml" />
+     <None Include="Assets\U3DXT\Examples\speech\README.txt" />
+     <None Include="Assets\U3DXT\Plugins\U3DXTCoreImage.xml" />
+     <None Include="Assets\U3DXT\Examples\gamekit7\GKMeeting\README.txt" />
+     <None Include="Assets\U3DXT\Plugins\U3DXTGameKit7_HL.xml" />
+     <None Include="Assets\U3DXT\Plugins\U3DXTCoreExtras_HL.xml" />
+     <None Include="Assets\U3DXT\Plugins\U3DXTCoreExtras.xml" />
+     <None Include="Assets\U3DXT\Plugins\U3DXTSocial.xml" />
+     <None Include="Assets\U3DXT\Plugins\U3DXTSocial_HL.xml" />
+     <None Include="Assets\U3DXT\Examples\social\SocialTest\README.txt" />
+     <None Include="Assets\U3DXT\Plugins\U3DXTCore.xml" />
+     <None Include="Assets\U3DXT\Plugins\U3DXTCoreImage_HL.xml" />
+     <None Include="Assets\U3DXT\Examples\iap\IAPTest\README.txt" />
+     <None Include="Assets\U3DXT\CHANGELOG.txt" />
+     <None Include="Assets\link.xml" />
+     <None Include="Assets\U3DXT\Plugins\U3DXTCore_HL.xml" />
+ <Reference Include="U3DXTCore">
+ <HintPath>Assets\U3DXT\Plugins\U3DXTCore.dll</HintPath>
+ </Reference>
+ <Reference Include="U3DXTCoreExtras">
+ <HintPath>Assets\U3DXT\Plugins\U3DXTCoreExtras.dll</HintPath>
+ </Reference>
+ <Reference Include="U3DXTCoreExtras_HL">
+ <HintPath>Assets\U3DXT\Plugins\U3DXTCoreExtras_HL.dll</HintPath>
+ </Reference>
+ <Reference Include="U3DXTCoreImage">
+ <HintPath>Assets\U3DXT\Plugins\U3DXTCoreImage.dll</HintPath>
+ </Reference>
+ <Reference Include="U3DXTCoreImage_HL">
+ <HintPath>Assets\U3DXT\Plugins\U3DXTCoreImage_HL.dll</HintPath>
+ </Reference>
+ <Reference Include="U3DXTCore_HL">
+ <HintPath>Assets\U3DXT\Plugins\U3DXTCore_HL.dll</HintPath>
+ </Reference>
+ <Reference Include="U3DXTGameKit7">
+ <HintPath>Assets\U3DXT\Plugins\U3DXTGameKit7.dll</HintPath>
+ </Reference>
+ <Reference Include="U3DXTGameKit7_HL">
+ <HintPath>Assets\U3DXT\Plugins\U3DXTGameKit7_HL.dll</HintPath>
+ </Reference>
+ <Reference Include="U3DXTSocial">
+ <HintPath>Assets\U3DXT\Plugins\U3DXTSocial.dll</HintPath>
+ </Reference>
+ <Reference Include="U3DXTSocial_HL">
+ <HintPath>Assets\U3DXT\Plugins\U3DXTSocial_HL.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
